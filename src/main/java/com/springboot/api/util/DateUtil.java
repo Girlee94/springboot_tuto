@@ -3,6 +3,7 @@ package com.springboot.api.util;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Component
@@ -10,7 +11,7 @@ public class DateUtil {
 
     public static String getNowDateYYYYMMDDHHMMSS() {
 
-        LocalDate now = LocalDate.now();
+        LocalDateTime now = LocalDateTime.now();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
 
