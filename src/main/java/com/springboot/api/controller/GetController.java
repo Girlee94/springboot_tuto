@@ -1,5 +1,6 @@
 package com.springboot.api.controller;
 
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,7 @@ public class GetController {
         return "hello";
     }
 
+    @ApiOperation(value = "GET 메소드 예제")
     @GetMapping(value = "/request1")
     public String getRequest1(@RequestParam Map<String, Object> param){
 
